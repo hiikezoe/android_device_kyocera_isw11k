@@ -12,7 +12,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_FPU : = neon
 TARGET_BOOTLOADER_BOARD_NAME := isw11k
 
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/fujitsu/f11d/recovery/keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/kyocera/isw11k/recovery/keys.c
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 BOARD_KERNEL_CMDLINE := console=ttyDCC0 androidboot.hardware=qcom
