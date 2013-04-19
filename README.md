@@ -1,5 +1,7 @@
 # Kyocera ISW11K
 
-## Recovery Mode
+## Boot modes
+
+### Recovery Mode
 
       Volume up + Power on
