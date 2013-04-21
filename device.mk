@@ -15,3 +15,5 @@ PRODUCT_PACKAGES += \
   libgenlock \
   liboverlay \
   libstagefrighthw
+
+$(call inherit-product-if-exists, vendor/kyocera/msm7630/msm7630-vendor.mk)
