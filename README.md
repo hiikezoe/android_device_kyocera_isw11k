@@ -6,6 +6,10 @@
 
       Volume up + Power on
 
+### 0482:0543
+
+    Connect USB cable without battery
+
 ## Partition
 
     mmcblk0p1  AMMS
