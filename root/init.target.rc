@@ -153,18 +153,12 @@ on post-fs
 on post-fs-data
     # 3LM settings
     setprop ro.3lm.production 1
-    
+
     # 3LM encryption
     setprop ro.3lm.legacy_encryption 1
     mkdir /data/secure 0755 system system
     mkdir /data/secure/data 0755 system system
     mount tmpfs tmpfs /data/secure/data nosuid mode=0755,gid=1000
-
-on property:ro.factorytest=1
-    setprop debug.sf.nobootanimation 1
-
-on property:init.svc.bootanim=stopped
-    rm /persist/errstart
 
 on property:init.run_class=core,main,late_start
     class_start main
@@ -175,113 +169,4 @@ on property:init.run_class=core,main
 
 on property:init.run_class=core,late_start
     class_start late_start
-
-on property:init.svc.dhcpcd_wimax0=stopped
-    setprop dhcp.wimax0.dns1 ""
-    setprop dhcp.wimax0.dns2 ""
-    setprop dhcp.wimax0.dns3 ""
-    setprop dhcp.wimax0.dns4 ""
-    setprop dhcp.wimax0.gateway ""
-    setprop dhcp.wimax0.ipaddress ""
-    setprop dhcp.wimax0.leasetime ""
-    setprop dhcp.wimax0.mask ""
-    setprop dhcp.wimax0.server ""
-
-service kdmd /system/vendor/bin/kdmd
-    class core
-    oneshot
-
-service kflcd /system/bin/kflcd
-    class late_start
-    socket kflcd stream 660 system system
-    oneshot
-
-service dtvtunerserver /system/bin/dtvtunerserver
-    class late_start
-    user system
-    group system
-
-service kwimax_ctrld /system/bin/kwimax_ctrld
-    class late_start
-
-service dhcpcd_wimax0 /system/bin/wimax_dhcpcd -ABKL wimax0
-    class late_start
-    disabled
-    oneshot
-
-service ktouch_nv_daemon /system/bin/ktouch_nv_daemon
-    class core
-    oneshot
-
-service disp_ctrl /system/bin/disp_ctrl
-    class core
-    oneshot
-
-service focld /system/bin/focld
-    class late_start
-    user root
-
-service kcjpropd /system/bin/kcjprop_daemon
-    class core
-    user root
-    group root
-
-service uimd /system/bin/uimd
-    class core
-    socket uimd stream 666 system system
-
-service emailprovd /system/bin/emailprovd
-    class late_start
-    socket aepls001 stream 666 root root
-
-service mediaserver_ex /system/bin/mediaserver_ex
-    class late_start
-    user system
-    group system
-
-service usb_secure /system/vendor/bin/usb_secure_mass
-    class core
-    user root
-    group sdcard_rw
-
-service usb_init /system/vendor/bin/usb_init
-    class core
-    user root
-    group system
-    oneshot
-
-service kerrd /system/vendor/bin/kerrd
-    class core
-
-service kdfs /system/vendor/bin/kdfs
-    class late_start
-    oneshot
-
-service pfmonitor /system/bin/pfmonitor
-    class late_start
-    oneshot
-
-service sdcardioserver /system/bin/sdcardioserver
-    class late_start
-    user root
-    group root
-
-service irdadaemon /system/bin/irdadaemon
-    class late_start
-    socket irdadaemon stream 666
-    oneshot
-
-service nv_kc_chk /system/bin/nv_kc_chk
-    class core
-    oneshot
-
-service akscd /system/vendor/bin/akscd
-    class core
-    user root
-    group root
-
-service wvnvd /system/bin/wvnvd
-    class late_start
-    user root
-    group root
 
