@@ -19,9 +19,9 @@
 (*1) Need https://github.com/hiikezoe/B2G/commit/1a6103a459bc9ca6b4a26a927776b36fe0e188d0
 
 ## Install
-    $ ./flash.sh (*1)
-
-(*1) Need https://github.com/hiikezoe/B2G/commit/1dc08277170e7c1aadd2105c9143dc384d82f1a2
+    $ dd if=boot.img of=/dev/block/mmcblk0p8 bs=512
+    $ dd if=system.img of=/dev/block/mmcblk0p12 bs=512
+    $ dd if=userdata.img of=/dev/block/mmcblk0p13 bs=512
 
 ## Boot modes
 
