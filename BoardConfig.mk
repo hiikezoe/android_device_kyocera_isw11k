@@ -9,7 +9,7 @@ TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_ARCH_VARIANT_FPU : = neon
+TARGET_ARCH_VARIANT_FPU := neon
 TARGET_BOOTLOADER_BOARD_NAME := isw11k
 
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/kyocera/isw11k/recovery/keys.c
