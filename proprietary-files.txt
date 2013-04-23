@@ -3,9 +3,6 @@ bin/qmuxd
 bin/sdgpiocmd
 bin/rmt_storage
 
-# libc.so in stock rom to avoid crash of rmt_storage
-lib/libc.so
-
 lib/libdiag.so
 lib/libdsi_netctrl.so
 lib/libdsm.so
