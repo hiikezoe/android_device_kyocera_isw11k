@@ -14,7 +14,11 @@
     $ wget https://raw.github.com/hiikezoe/android_device_kyocera_isw11k/b2g/isw11k.xml
     $ DEVICE=isw11k ./config.sh isw11k isw11k.xml (*1)
 
+extract Qualcomm Adreno driver[1] into vendor/qcom/adreno200/proprietary/.
+
     $ ./build.sh
+
+[1] https://developer.qualcomm.com/download/adreno200-aulinuxandroidicschococs04000306001.zip
 
 (*1) Need https://github.com/hiikezoe/B2G/commit/1a6103a459bc9ca6b4a26a927776b36fe0e188d0
 
