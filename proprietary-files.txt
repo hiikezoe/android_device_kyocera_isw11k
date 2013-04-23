@@ -15,12 +15,14 @@ lib/libnv.so
 lib/liboem_rapi.so
 lib/liboncrpc.so
 lib/libpbmlib.so
+lib/libqdi.so
 lib/libqdp.so
 lib/libqmi.so
 lib/libqmiservices.so
 lib/libril.so
 lib/libril-qcril-hook-oem.so
 lib/libril-qc-qmi-1.so
+lib/libril-qc-1.so
 
 lib/modules/kc_sdcarddrv.ko
 
