@@ -103,6 +103,13 @@ on boot
 on post-fs
     export_rc /persist/init.cne.rc
 
+    write /sys/kernel/mmc_protect/clear mmcblk0p12
+    mount ext4 /dev/block/mmcblk0p12 /system rw remount
+    chmod 0755 /system/b2g/b2g
+    chmod 0755 /system/b2g/plugin-container
+    chmod 0755 /system/b2g/updater
+    mount ext4 /dev/block/mmcblk0p12 /system ro remount
+
 # msm specific files that need to be created on /data
 on post-fs-data
 
