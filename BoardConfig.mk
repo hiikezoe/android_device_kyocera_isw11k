@@ -4,7 +4,7 @@ USE_CAMERA_STUB := true
 -include vendor/kyocera/isw11k/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := msm7x30_surf
+TARGET_BOARD_PLATFORM := msm7630_surf
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
