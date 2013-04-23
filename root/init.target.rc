@@ -169,3 +169,7 @@ on property:init.run_class=core,main
 on property:init.run_class=core,late_start
     class_start late_start
 
+service kcjpropd /system/bin/kcjprop_daemon
+    class core
+    user root
+    group root

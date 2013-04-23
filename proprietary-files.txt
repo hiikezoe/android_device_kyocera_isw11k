@@ -1,4 +1,5 @@
 bin/amploader
+bin/kcjprop_daemon
 bin/rild
 bin/qmuxd
 bin/sdgpiocmd
