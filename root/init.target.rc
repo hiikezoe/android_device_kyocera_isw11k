@@ -64,6 +64,7 @@ on boot
     chmod 0660 /dev/leds-ledlight
 
     insmod  /system/lib/modules/hscd_i2c.ko
+    insmod  /system/lib/modules/kxud9.ko
     insmod  /system/lib/modules/alps-input.ko
     chown system system /dev/alps_io
     chmod 0660 /dev/alps_io
