@@ -174,3 +174,7 @@ service kcjpropd /system/bin/kcjprop_daemon
     class core
     user root
     group root
+
+service ktouch_nv_daemon /system/bin/ktouch_nv_daemon
+    class core
+    oneshot

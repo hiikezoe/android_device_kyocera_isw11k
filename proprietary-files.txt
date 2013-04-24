@@ -1,5 +1,6 @@
 bin/amploader
 bin/kcjprop_daemon
+bin/ktouch_nv_daemon
 bin/rild
 bin/qmuxd
 bin/sdgpiocmd

@@ -7,6 +7,7 @@ PRODUCT_COPY_FILES += \
   device/kyocera/isw11k/root/init.qcom.ril.path.sh:root/init.qcom.ril.path.sh \
   device/kyocera/isw11k/root/init.qcom.sh:root/init.qcom.sh \
   device/kyocera/isw11k/system/vold.fstab:system/etc/vold.fstab \
+  device/kyocera/isw11k/system/ts-mxt224.idc:system/usr/idc/ts-mxt224.idc \
   device/kyocera/isw11k/root/ueventd.rc:root/ueventd.rc
 
 PRODUCT_PACKAGES += \
