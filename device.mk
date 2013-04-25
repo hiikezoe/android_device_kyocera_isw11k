@@ -12,8 +12,8 @@ PRODUCT_COPY_FILES += \
   device/kyocera/isw11k/system/ts_mxt224.idc:system/usr/idc/ts_mxt224.idc
 
 PRODUCT_PACKAGES += \
-  audio_policy.msm7630_surf.so \
-  audio.primary.msm7630_surf.so \
+  audio_policy.msm7630_surf \
+  audio.primary.msm7630_surf \
   copybit.msm7630_surf \
   gralloc.msm7630_surf \
   hwcomposer.msm7630_surf \
