@@ -1,0 +1,9 @@
+etc/firmware/wlan/cfg.dat
+etc/firmware/wlan/qcom_fw.bin
+etc/firmware/wlan/qcom_wlan_nv.bin
+etc/firmware/wlan/volans/WCN1314_cfg.dat
+etc/firmware/wlan/volans/WCN1314_qcom_fw.bin
+etc/firmware/wlan/volans/WCN1314_qcom_wlan_nv.bin
+
+lib/modules/libra/libra_ftm.ko
+lib/modules/libra/libra.ko
