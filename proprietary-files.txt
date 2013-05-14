@@ -1,5 +1,4 @@
 bin/linker
-bin/sdgpiocmd
 bin/rmt_storage
 lib/libcutils.so
 lib/libstdc++.so
